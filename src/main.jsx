@@ -1,14 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
-import { initalizedThree } from "./three";
+import { Three } from "./three";
 
 class App extends React.Component {
-  constructor() {
-    initalizedThree();
-  }
-
   render() {
-    return <p> Hello React!</p>;
+    return (
+      <div>
+        <p> Hello React!</p>;
+        <Three />;
+      </div>
+    );
   }
 }
 
